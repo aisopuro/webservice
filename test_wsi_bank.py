@@ -1,17 +1,6 @@
 from suds.client import Client
 import traceback
 import unittest
-# print client
-# result = client.service.say_hello('Atte', 3)
-# print result
-# user = client.factory.create('User')
-# print user
-
-# make_bad_call('toofewarguments')
-# result = client.service.transfer('aesop', 'F1234', 'F1234', 1)
-# print result
-# make_bad_call('aesop', 'F1234', 'F1234', -1)
-# make_bad_call('aesop', 'F1234', 'F1234', 100000000)
 
 class TestWSIBankService(unittest.TestCase):
     @classmethod
@@ -36,9 +25,6 @@ class TestWSIBankService(unittest.TestCase):
 
     def test_transfer_to_same_account(self):
         self.expect_exception('aesop', 'F1234', 'F1234', 100)
-
-    def test_more_than_transferree_has(self):
-        self.expect_exception('aesop', 'F1234', 'B5678', 100000000)
 
     def test_correct_call(self):
         result = self.client.service.transfer('aesop', 'F1234', 'B5678', 100)
