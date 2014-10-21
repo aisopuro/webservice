@@ -19,7 +19,6 @@ class BankService(ServiceBase):
         Amount is cents to transfer.
         """
         if fromAccount == toAccount:
-            print fromAccount, toAccount
             raise InvalidRequestError('', 'Cannot transfer to same account%s')
         return 'OK'
         

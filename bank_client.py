@@ -43,9 +43,9 @@ while keepGoing:
     username = raw_input('Transfer from user [someuser]:') or 'someuser'
     fromAccount = raw_input("Transfer from user's account [someaccount]:") or 'someaccount'
     toAccount = raw_input("Transfer to account [someotheraccount]:") or 'someotheraccount'
-    amount = raw_input("Amount of money (in cents) [100]") or 100
+    amount = raw_input("Amount of money (in cents) [100]:") or 100
     print ''
-    print "Transferring {} euros from {}'s account {} to account {}".format(amount / 100, username, fromAccount, toAccount)
+    print "Transferring {} cents from {}'s account {} to account {}".format(amount, username, fromAccount, toAccount)
     print "Service says:"
     to_call(username, fromAccount, toAccount, amount)
     print ''
