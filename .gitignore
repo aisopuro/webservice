@@ -1,3 +1,5 @@
 .project
 *.pyc
+*.sh
 *.sublime*
+runservice.sh

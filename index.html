@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta charset=utf-8>
+        <title>SellerService</title>
+ 
+        <!--[if lt IE 9]> HTML5Shiv
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+ 
+    </head>
+    <body>
+        <script src="http://www.goodreads.com/book/isbn?format=xml&isbn=0399158448&key=uv1J3LcJ7zGuhzCXwaCcUQ"></script>
+        <script type="text/javascript">
+            function myCallback(result) {
+              console.log(result);
+            }
+            var scriptTag = document.createElement('script');
+            scriptTag.src = "http://www.goodreads.com/book/isbn?callback=myCallback&format=json&isbn=0399158448";
+            document.getElementsByTagName('head')[0].appendChild(scriptTag);
+            </script>
+
+            <style> #goodreads-widget { font-family: georgia, serif; padding: 18px 0; width:565px; } #goodreads-widget h1 { font-weight:normal; font-size: 16px; border-bottom: 1px solid #BBB596; margin-bottom: 0; } #goodreads-widget a { text-decoration: none; color:#660; } iframe{ background-color: #fff; } #goodreads-widget a:hover { text-decoration: underline; } #goodreads-widget a:active { color:#660; } #gr_footer { width: 100%; border-top: 1px solid #BBB596; text-align: right; } #goodreads-widget .gr_branding{ color: #382110; font-size: 11px; text-decoration: none; font-family: verdana, arial, helvetica, sans-serif; } </style> <div id="goodreads-widget"> <div id="gr_header"><h1><a href="http://www.goodreads.com/book/show/20821159-the-peripheral">The Peripheral Reviews</a></h1></div> <iframe id="the_iframe" src="http://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&amp;format=html&amp;isbn=0399158448&amp;links=660&amp;min_rating=&amp;review_back=fff&amp;stars=000&amp;text=000" width="565" height="400" frameborder="0"></iframe> <div id="gr_footer"> <a href="http://www.goodreads.com/book/show/20821159-the-peripheral?utm_medium=api&amp;utm_source=reviews_widget" class="gr_branding" target="_blank">Reviews from Goodreads.com</a> </div> </div>
+    </body>
+</html>
