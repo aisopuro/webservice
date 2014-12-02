@@ -3,3 +3,4 @@
 *.sh
 *.sublime*
 runservice.sh
+key_conf.py
